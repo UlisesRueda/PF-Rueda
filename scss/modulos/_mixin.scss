@@ -1,0 +1,453 @@
+
+            // MIXINS DEL HEADER
+@mixin header {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.295);
+    z-index: 2;
+}
+
+@mixin nav {
+    #navbarNav{
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    color: $color-secondary;
+                    font-weight: 600;
+                    &:hover {
+                        border-bottom: 2px solid $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+            // MIXIN DEL HEADER (media queries)
+@mixin mb-header {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.295);
+    z-index: 2;
+}
+
+@mixin mb-nav {
+    div {
+        position: relative;
+        top: 20px;
+        #navbarNav{
+            ul {
+                li {
+                    a {
+                        background-color: gray;
+                        text-decoration: none;
+                        color: $color-secondary;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        &:active {
+                            border-bottom: 2px solid $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+            // INDEX PRINCIPAL - MIXIN DE PRESENTACIÓN
+
+@mixin presentacion {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 123vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: $color-terciary;
+        text-decoration: underline;
+    }
+    h2 {
+        font-size: 20px;
+        color: rgb(94, 92, 92);
+    }
+}
+
+            // INDEX PRINCIPAL - MIXINS DE LOS SECTION 2 Y 4
+
+@mixin titulo-secundario ($aling, $decoration, $FontSize, $color) {
+    text-align: $aling;
+    text-decoration: $decoration;
+    font-size: $FontSize;
+    color: $color;
+}
+
+@mixin section-div ($flex, $row, $around, $aling) {
+    display: $flex;
+    flex-direction: $row;
+    justify-content: $around;
+    align-items: $aling;
+}
+
+@mixin articles {
+    width: $size-articles-width;
+    height: $size-articles-height;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: url(../assets/img/textura-roja-tela.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin img {
+    width: $size-article-img;
+    &:hover {
+        width: $size-article-img-hover;
+        transition: all 0.5s;
+    }
+}
+
+@mixin h3 ($color, $FontSize, $weight) {
+    color: $color;
+    font-size: $FontSize;
+    font-weight: $weight;
+}
+
+@mixin article-div{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    #h5-dist {
+        color: rgba(255, 255, 255, 0.61);
+        font-size: 20px;
+        text-decoration: line-through;
+    }
+    
+    h4 {
+        color: $color-secondary;
+        font-size: $font-size-h3-h4;
+        position: relative;
+        bottom: 2px;
+        margin-left: 5px;
+    }
+}
+
+
+
+
+                // INDEX - MIXINS DEL SECTION 3
+
+@mixin sect3-div ($flex, $column, $align){
+    display: $flex;
+    flex-direction: $column;
+    align-items: $align;
+}
+
+@mixin sect3-article {
+    width: $size-articles-sect3-width;
+    height: $size-articles-sect3-height;
+    background-image: url(../assets/img/textura-roja-tela.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin sect3-img {
+    width: $size-article-sect3-img-wid;
+    height: $size-article-sect3-img-heig;
+    &:hover {
+        width: $size-article-sect3-img-hover-wid;
+        height: $size-article-sect3-img-hover-heig;
+        transition: all 0.5s;
+    }
+}
+
+@mixin sect-h3 ($color, $FontSize, $weight) {
+    color: $color;
+    font-size: $FontSize;
+    font-weight: $weight;
+}
+
+@mixin sect3-article-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #h5-dist {
+        color: rgba(255, 255, 255, 0.61);
+        font-size: 20px;
+        text-decoration: line-through;
+    }
+    
+    h4 {
+        color: $color-secondary;
+        font-size: $font-size-h3-h4;
+    }
+}
+
+                // CONTACTO - MIXINS
+@mixin presentacion-contacto {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 26px;
+    h1 {
+        color: $color-terciary;
+        text-decoration: underline;
+    }
+    h2 {
+        font-size: 20px;
+        color: rgb(94, 92, 92);
+    }
+}
+
+@mixin form {
+    background-image: url(../assets/img/textura-roja-tela.jpg);
+    width: 90%;
+    height: 35%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 40px;
+        color: $color-terciary;
+            
+    }       
+    label {
+        color: $color-secondary;
+    }
+}
+
+                // TALLES - MIXINS
+@mixin presentacion-talles {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 106vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 25px;
+
+}
+
+@mixin talles-h1 {
+    position: relative;
+    bottom: 20%;
+    color: $color-terciary;
+    text-decoration: underline;
+    text-align: center;
+    width: 80%;
+}
+
+@mixin talles-h2 {
+    position: relative;
+    bottom: 20%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(94, 92, 92);
+    width: 80%;
+}
+
+@mixin main-talles ($flex, $column, $justify, $align){
+    display: $flex;
+    flex-direction: $column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin h2-talles ($align, $decoration, $FontSize, $color) {
+    text-align: $align;
+    text-decoration: $decoration;
+    font-size: $FontSize;
+    color: $color;
+}
+
+@mixin talles-div {
+    p {
+        color: $color-secondary;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 650;
+    }
+
+    ul {
+
+        li {
+            color: $color-secondary;
+        }
+    }
+}
+
+
+                // ENVIOS - MIXINS
+@mixin presentacion-envios {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:39px;
+}
+
+@mixin h1-envios {
+    position: relative;
+    bottom: 20%;
+    color: $color-terciary;
+    text-decoration: underline;
+    text-align: center;
+    width: 80%;
+}
+
+@mixin h2-envios {
+    position: relative;
+    bottom: 20%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(94, 92, 92);
+    width: 80%;
+}         
+
+@mixin main-envios ($flex, $column, $justify, $align){
+    display: $flex;
+    flex-direction: $column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin h2-envios ($align, $decoration, $FontSize, $color) {
+    text-align: $align;
+    text-decoration: $decoration;
+    font-size: $FontSize;
+    color: $color;
+}
+
+@mixin texto1 {
+    background-image: url(../assets/img/textura-roja-tela.jpg);
+    width: 80%;
+    p {
+        font-size: 20px;
+        color: $color-secondary;
+        text-shadow: 1px 7px 2px $color-primary;
+    }
+}
+
+@mixin img-envio {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 50%;
+    }
+}
+
+                // NOSOTROS - MIXINS
+@mixin presentacion-nosotros {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:57px;
+}
+
+@mixin h1-nosotros {
+    position: relative;
+    bottom: 20%;
+    color: $color-terciary;
+    text-decoration: underline;
+    text-align: center;
+    width: 80%;
+}
+
+@mixin h2-nosotros {
+    position: relative;
+    bottom: 20%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(94, 92, 92);
+    width: 80%;
+}
+
+                // MIXINS DEL FOOTER
+@mixin footer ($color, $height, $borderTop, $position, $top) {
+    background-color: $color;
+    height: $height;
+    border-top: $borderTop;
+    position: $position;
+    top: $top;
+}
+
+@mixin div-a-img {
+    display: flex;
+    justify-content: space-evenly;
+    #whatsapp {
+        width: 40px;
+        &:hover {
+            width: 50px;
+        }
+    }
+    #facebook {
+        width: 40px;
+        &:hover {
+             width: 55px;
+        }
+    }
+    #instagram {
+        width: 40px;
+        &:hover {
+            width: 50px;
+        }
+    }
+}
+
+@mixin h1 ($color, $decoration, $align) {
+    color: $color;
+    text-decoration: $decoration;
+    text-align: $align;
+}
+
+@mixin div-p-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: center;
+        grid-area: parrafo;
+        color: $color-secondary;
+        width: 30%;
+        font-size: 20px;
+        order: 1;
+    }
+    a {
+        margin-left: 50px;
+        order: 2;
+        img {
+            width: 100px;
+        }
+    }
+}

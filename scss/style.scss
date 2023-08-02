@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+                                    // INDEX - LAYOUT DEL BODY
+
+body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 10fr 0.5fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: black;
+        height: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 0.5fr 10fr 0.5fr;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer; 
+        }
+    }
+}
+
+                                    //  CONTACTO - LAYOUT DEL BODY
+
+#layout-contacto {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #layout-contacto {
+        background-color: black;
+        height: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer; 
+        }
+    }
+}
+                                    //  TALLES - LAYOUT DEL BODY
+
+#layout-talles {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #layout-talles {
+        background-color: black;
+        height: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer; 
+        }
+    }
+}
+                                    //  ENVIOS - LAYOUT DEL BODY
+
+#layout-envios {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #layout-envios {
+        background-color: black;
+        height: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer; 
+        }
+    }
+}
+
+
+
+
+
+@import "./modulos/variables";
+@import "./modulos/mixin";
+@import "./modulos/header.scss";
+@import "./modulos/main.scss";
+@import "./modulos/footer.scss";

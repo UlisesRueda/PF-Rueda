@@ -1,0 +1,22 @@
+header {
+    @include header ();
+    img {
+        height: 80px;
+        }
+    nav {
+        @include nav ();
+    }
+}
+
+                //  MEDIA QUERIES DEL HEADER
+@media screen and (max-width: 480px) {
+    header {
+        @include mb-header ();
+        img {
+            height: 80px;
+            }
+        nav {
+            @include mb-nav ();
+        }
+    }
+}

@@ -1,0 +1,848 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 0.5fr 10fr 0.5fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer"; }
+  body header {
+    grid-area: header; }
+  body main {
+    grid-area: main; }
+  body footer {
+    grid-area: footer; }
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 10fr 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "main main" "footer footer"; }
+    body header {
+      grid-area: header; }
+    body main {
+      grid-area: main; }
+    body footer {
+      grid-area: footer; } }
+
+#layout-contacto {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer"; }
+  #layout-contacto header {
+    grid-area: header; }
+  #layout-contacto main {
+    grid-area: main; }
+  #layout-contacto footer {
+    grid-area: footer; }
+
+@media screen and (max-width: 480px) {
+  #layout-contacto {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "main main" "footer footer"; }
+    #layout-contacto header {
+      grid-area: header; }
+    #layout-contacto main {
+      grid-area: main; }
+    #layout-contacto footer {
+      grid-area: footer; } }
+
+#layout-talles {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer"; }
+  #layout-talles header {
+    grid-area: header; }
+  #layout-talles main {
+    grid-area: main; }
+  #layout-talles footer {
+    grid-area: footer; }
+
+@media screen and (max-width: 480px) {
+  #layout-talles {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "main main" "footer footer"; }
+    #layout-talles header {
+      grid-area: header; }
+    #layout-talles main {
+      grid-area: main; }
+    #layout-talles footer {
+      grid-area: footer; } }
+
+#layout-envios {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer"; }
+  #layout-envios header {
+    grid-area: header; }
+  #layout-envios main {
+    grid-area: main; }
+  #layout-envios footer {
+    grid-area: footer; }
+
+@media screen and (max-width: 480px) {
+  #layout-envios {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "main main" "footer footer"; }
+    #layout-envios header {
+      grid-area: header; }
+    #layout-envios main {
+      grid-area: main; }
+    #layout-envios footer {
+      grid-area: footer; } }
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.295);
+  z-index: 2; }
+  header img {
+    height: 80px; }
+  header nav #navbarNav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600; }
+    header nav #navbarNav ul li a:hover {
+      border-bottom: 2px solid white; }
+
+@media screen and (max-width: 480px) {
+  header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.295);
+    z-index: 2; }
+    header img {
+      height: 80px; }
+    header nav div {
+      position: relative;
+      top: 20px; }
+      header nav div #navbarNav ul li a {
+        background-color: gray;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-decoration: underline; }
+        header nav div #navbarNav ul li a:active {
+          border-bottom: 2px solid white; } }
+
+main {
+  z-index: 1; }
+  main #presentacion {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 123vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main #presentacion h1 {
+      color: silver;
+      text-decoration: underline; }
+    main #presentacion h2 {
+      font-size: 20px;
+      color: #5e5c5c; }
+  main #sect-1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main #sect-1 div p {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      text-decoration: underline; }
+    main #sect-1 div img {
+      width: 150px; }
+  main #sect-2 #titulo-secundario {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    color: silver; }
+  main #sect-2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    main #sect-2 div article {
+      width: 600px;
+      height: 550px;
+      margin-left: 50px;
+      margin-right: 50px;
+      background-image: url(../assets/img/textura-roja-tela.jpg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #sect-2 div article img {
+        width: 90%; }
+        main #sect-2 div article img:hover {
+          width: 120%;
+          transition: all 0.5s; }
+      main #sect-2 div article h3 {
+        color: silver;
+        font-size: 25px;
+        font-weight: 900; }
+      main #sect-2 div article div {
+        display: flex;
+        justify-content: start;
+        align-items: start; }
+        main #sect-2 div article div #h5-dist {
+          color: rgba(255, 255, 255, 0.61);
+          font-size: 20px;
+          text-decoration: line-through; }
+        main #sect-2 div article div h4 {
+          color: white;
+          font-size: 25px;
+          position: relative;
+          bottom: 2px;
+          margin-left: 5px; }
+  main #sect-3 #titulo-secundario {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    color: silver; }
+  main #sect-3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main #sect-3 div article {
+      width: 90%;
+      height: 500px;
+      background-image: url(../assets/img/textura-roja-tela.jpg);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      main #sect-3 div article img {
+        width: 30%;
+        height: 60%; }
+        main #sect-3 div article img:hover {
+          width: 40%;
+          height: 70%;
+          transition: all 0.5s; }
+      main #sect-3 div article h3 {
+        color: silver;
+        font-size: 25px;
+        font-weight: 900; }
+      main #sect-3 div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        main #sect-3 div article div #h5-dist {
+          color: rgba(255, 255, 255, 0.61);
+          font-size: 20px;
+          text-decoration: line-through; }
+        main #sect-3 div article div h4 {
+          color: white;
+          font-size: 25px; }
+      main #sect-3 div article #img-arti2 {
+        order: 2; }
+      main #sect-3 div article #descript-arti2 {
+        order: 1; }
+  main #sect-4 #titulo-secundario {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    color: silver; }
+  main #sect-4 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    main #sect-4 div article {
+      width: 600px;
+      height: 550px;
+      margin-left: 50px;
+      margin-right: 50px;
+      background-image: url(../assets/img/textura-roja-tela.jpg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #sect-4 div article img {
+        width: 90%; }
+        main #sect-4 div article img:hover {
+          width: 120%;
+          transition: all 0.5s; }
+      main #sect-4 div article h3 {
+        color: silver;
+        font-size: 25px;
+        font-weight: 900; }
+      main #sect-4 div article div {
+        display: flex;
+        justify-content: start;
+        align-items: start; }
+        main #sect-4 div article div #h5-dist {
+          color: rgba(255, 255, 255, 0.61);
+          font-size: 20px;
+          text-decoration: line-through; }
+        main #sect-4 div article div h4 {
+          color: white;
+          font-size: 25px;
+          position: relative;
+          bottom: 2px;
+          margin-left: 5px; }
+  main #presentacion-contacto {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 26px; }
+    main #presentacion-contacto h1 {
+      color: silver;
+      text-decoration: underline; }
+    main #presentacion-contacto h2 {
+      font-size: 20px;
+      color: #5e5c5c; }
+  main form {
+    background-image: url(../assets/img/textura-roja-tela.jpg);
+    width: 90%;
+    height: 35%;
+    position: relative;
+    left: 5%;
+    top: 5%; }
+    main form h2 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 40px;
+      color: silver; }
+    main form label {
+      color: white; }
+  main #presentacion-talles {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 106vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 25px; }
+    main #presentacion-talles h1 {
+      position: relative;
+      bottom: 20%;
+      color: silver;
+      text-decoration: underline;
+      text-align: center;
+      width: 80%; }
+    main #presentacion-talles h2 {
+      position: relative;
+      bottom: 20%;
+      text-align: center;
+      font-size: 20px;
+      color: #5e5c5c;
+      width: 80%; }
+  main #main-talles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main #main-talles h2 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 40px;
+      color: silver; }
+    main #main-talles img {
+      width: 50%; }
+    main #main-talles div p {
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 650; }
+    main #main-talles div ul li {
+      color: white; }
+  main #presentacion-envios {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 39px; }
+    main #presentacion-envios h1 {
+      position: relative;
+      bottom: 20%;
+      color: silver;
+      text-decoration: underline;
+      text-align: center;
+      width: 80%; }
+    main #presentacion-envios h2 {
+      position: relative;
+      bottom: 20%;
+      text-align: center;
+      font-size: 20px;
+      color: #5e5c5c;
+      width: 80%; }
+  main #main-envios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main #main-envios h2 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 40px;
+      color: silver; }
+    main #main-envios #texto1 {
+      background-image: url(../assets/img/textura-roja-tela.jpg);
+      width: 80%; }
+      main #main-envios #texto1 p {
+        font-size: 20px;
+        color: white;
+        text-shadow: 1px 7px 2px black; }
+    main #main-envios #imagen-envio {
+      display: flex;
+      justify-content: center; }
+      main #main-envios #imagen-envio img {
+        width: 50%; }
+  main #presentacion-nosotros {
+    background-image: url(../assets/img/fondoProyecto2.jpg);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 57px; }
+    main #presentacion-nosotros h1 {
+      position: relative;
+      bottom: 20%;
+      color: silver;
+      text-decoration: underline;
+      text-align: center;
+      width: 80%; }
+    main #presentacion-nosotros h2 {
+      position: relative;
+      bottom: 20%;
+      text-align: center;
+      font-size: 20px;
+      color: #5e5c5c;
+      width: 80%; }
+
+@media screen and (max-width: 480px) {
+  main {
+    z-index: 1; }
+    main #presentacion {
+      background-image: url(../assets/img/fondoProyecto2.jpg);
+      height: 71vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #presentacion h1 {
+        position: relative;
+        bottom: 20%;
+        color: silver;
+        text-decoration: underline;
+        text-align: center;
+        width: 80%; }
+      main #presentacion h2 {
+        position: relative;
+        bottom: 20%;
+        text-align: center;
+        font-size: 20px;
+        color: #5e5c5c;
+        width: 80%; }
+    main #sect-1 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%; }
+      main #sect-1 div p {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        text-align: center;
+        width: 80%;
+        text-decoration: underline; }
+      main #sect-1 div img {
+        width: 30%; }
+    main #sect-2 #titulo-secundario {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 40px;
+      color: silver; }
+    main #sect-2 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      main #sect-2 div article {
+        width: 80%;
+        height: 80%;
+        margin: 20px 0 0 0;
+        background-image: url(../assets/img/textura-roja-tela.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        main #sect-2 div article img {
+          width: 60%; }
+        main #sect-2 div article h3 {
+          color: #9ca3a7;
+          font-size: 25px;
+          font-weight: 900; }
+        main #sect-2 div article div {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          main #sect-2 div article div #h5-dist {
+            color: rgba(255, 255, 255, 0.61);
+            font-size: 20px;
+            text-decoration: line-through; }
+          main #sect-2 div article div h4 {
+            color: white;
+            font-size: 25px;
+            position: relative;
+            bottom: 2px;
+            margin-left: 5px; }
+    main #sect-3 #titulo-secundario-2 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 40px;
+      color: silver; }
+    main #sect-3 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      main #sect-3 div article {
+        width: 80%;
+        height: 300px;
+        background-image: url(../assets/img/textura-roja-tela.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        main #sect-3 div article img {
+          width: 50%; }
+        main #sect-3 div article h3 {
+          color: #9ca3a7;
+          font-size: 25px;
+          font-weight: 900; }
+        main #sect-3 div article div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          main #sect-3 div article div #h5-dist {
+            color: rgba(255, 255, 255, 0.61);
+            font-size: 20px;
+            text-decoration: line-through; }
+          main #sect-3 div article div h4 {
+            color: white;
+            font-size: 25px; }
+        main #sect-3 div article #img-arti2 {
+          order: 1; }
+        main #sect-3 div article #descript-arti2 {
+          order: 2; }
+    main #sect-4 #titulo-secundario {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 40px;
+      color: silver; }
+    main #sect-4 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      main #sect-4 div article {
+        width: 80%;
+        height: 80%;
+        margin: 20px 0 0 0;
+        background-image: url(../assets/img/textura-roja-tela.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        main #sect-4 div article img {
+          width: 60%; }
+        main #sect-4 div article h3 {
+          color: #9ca3a7;
+          font-size: 25px;
+          font-weight: 900; }
+        main #sect-4 div article div {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          main #sect-4 div article div #h5-dist {
+            color: rgba(255, 255, 255, 0.61);
+            font-size: 20px;
+            text-decoration: line-through; }
+          main #sect-4 div article div h4 {
+            color: white;
+            font-size: 25px;
+            position: relative;
+            bottom: 2px;
+            margin-left: 5px; }
+    main #presentacion-contacto {
+      background-image: url(../assets/img/fondoProyecto2.jpg);
+      height: 71vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #presentacion-contacto h1 {
+        position: relative;
+        bottom: 20%;
+        color: #8a8787;
+        text-decoration: underline;
+        text-align: center;
+        width: 80%; }
+      main #presentacion-contacto h2 {
+        position: relative;
+        bottom: 20%;
+        text-align: center;
+        font-size: 20px;
+        color: #5e5c5c;
+        width: 80%; }
+    main form {
+      position: relative;
+      top: 70px;
+      background-image: url(../assets/img/textura-roja-tela.jpg);
+      width: 90%;
+      height: 60%;
+      position: relative;
+      left: 5%; }
+      main form h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 40px;
+        color: silver; }
+      main form label {
+        color: white; }
+    main #presentacion-talles {
+      background-image: url(../assets/img/fondoProyecto2.jpg);
+      height: 72vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #presentacion-talles h1 {
+        position: relative;
+        bottom: 20%;
+        color: #8a8787;
+        text-decoration: underline;
+        text-align: center;
+        width: 80%; }
+      main #presentacion-talles h2 {
+        position: relative;
+        bottom: 20%;
+        text-align: center;
+        font-size: 20px;
+        color: #5e5c5c;
+        width: 80%; }
+    main #main-talles {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #main-talles h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 25px;
+        color: silver; }
+      main #main-talles img {
+        width: 80%; }
+      main #main-talles div p {
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 650; }
+      main #main-talles div ul li {
+        color: white; }
+    main #presentacion-envios {
+      background-image: url(../assets/img/fondoProyecto2.jpg);
+      height: 72vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #presentacion-envios h1 {
+        position: relative;
+        bottom: 20%;
+        color: #8a8787;
+        text-decoration: underline;
+        text-align: center;
+        width: 80%; }
+      main #presentacion-envios h2 {
+        position: relative;
+        bottom: 20%;
+        text-align: center;
+        font-size: 20px;
+        color: #5e5c5c;
+        width: 80%; }
+    main #main-envios {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #main-envios h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 40px;
+        color: silver; }
+      main #main-envios #texto1 {
+        background-image: url(../assets/img/textura-roja-tela.jpg);
+        width: 80%; }
+        main #main-envios #texto1 p {
+          font-size: 20px;
+          color: white;
+          text-shadow: 1px 7px 2px black; }
+      main #main-envios #imagen-envio {
+        display: flex;
+        justify-content: center; }
+        main #main-envios #imagen-envio img {
+          width: 50%; }
+    main #presentacion-nosotros {
+      background-image: url(../assets/img/fondoProyecto2.jpg);
+      height: 72vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #presentacion-nosotros h1 {
+        position: relative;
+        bottom: 20%;
+        color: #8a8787;
+        text-decoration: underline;
+        text-align: center;
+        width: 80%; }
+      main #presentacion-nosotros h2 {
+        position: relative;
+        bottom: 20%;
+        text-align: center;
+        font-size: 20px;
+        color: #5e5c5c;
+        width: 80%; } }
+
+footer {
+  background-color: black;
+  height: 350px;
+  border-top: 2px solid rgba(255, 255, 255, 0.582);
+  position: relative;
+  top: 100px; }
+  footer #div-a-img {
+    display: flex;
+    justify-content: space-evenly; }
+    footer #div-a-img #whatsapp {
+      width: 40px; }
+      footer #div-a-img #whatsapp:hover {
+        width: 50px; }
+    footer #div-a-img #facebook {
+      width: 40px; }
+      footer #div-a-img #facebook:hover {
+        width: 55px; }
+    footer #div-a-img #instagram {
+      width: 40px; }
+      footer #div-a-img #instagram:hover {
+        width: 50px; }
+  footer #div-h1 h1 {
+    color: silver;
+    text-decoration: underline;
+    text-align: center; }
+  footer #div-p-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    footer #div-p-img p {
+      text-align: center;
+      grid-area: parrafo;
+      color: white;
+      width: 30%;
+      font-size: 20px;
+      order: 1; }
+    footer #div-p-img a {
+      margin-left: 50px;
+      order: 2; }
+      footer #div-p-img a img {
+        width: 100px; }
+
+@media screen and (max-width: 480px) {
+  footer {
+    background-color: black;
+    height: 350px;
+    border-top: 2px solid rgba(255, 255, 255, 0.582);
+    position: relative;
+    top: 100px; }
+    footer #div-a-img {
+      display: flex;
+      justify-content: space-evenly; }
+      footer #div-a-img #whatsapp {
+        width: 40px; }
+        footer #div-a-img #whatsapp:hover {
+          width: 50px; }
+      footer #div-a-img #facebook {
+        width: 40px; }
+        footer #div-a-img #facebook:hover {
+          width: 55px; }
+      footer #div-a-img #instagram {
+        width: 40px; }
+        footer #div-a-img #instagram:hover {
+          width: 50px; }
+    footer #div-h1 h1 {
+      text-decoration: underline;
+      text-align: center; }
+    footer #div-p-img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 80%; }
+      footer #div-p-img p {
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 20px;
+        order: 1; }
+      footer #div-p-img a {
+        order: 2; }
+        footer #div-p-img a img {
+          width: 100px; } }

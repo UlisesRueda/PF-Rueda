@@ -1,0 +1,76 @@
+footer {
+    @include footer ($color-primary, 350px, 2px solid rgba(255, 255, 255, 0.582), relative, 100px);
+
+    #div-a-img {
+        @include div-a-img ();
+    }
+
+    #div-h1 {
+        h1 {
+            @include h1 ($color-terciary, underline, center);
+        }
+    }
+
+    #div-p-img {
+        @include div-p-img ();
+    }
+}
+
+                    //  MEDIA QUERIES DEL FOOTER
+@media screen and (max-width: 480px) {
+    footer {
+        background-color: black;
+        height: 350px;
+        border-top: 2px solid rgba(255, 255, 255, 0.582);
+        position: relative;
+        top: 100px;
+        #div-a-img {
+            display: flex;
+            justify-content: space-evenly;
+            #whatsapp {
+                width: 40px;
+                &:hover {
+                    width: 50px;
+                }
+            }
+            #facebook {
+                width: 40px;
+                &:hover {
+                    width: 55px;
+                }
+            }
+            #instagram {
+                width: 40px;
+                &:hover {
+                    width: 50px;
+                }
+            }
+        }
+        #div-h1 {
+            h1 {
+                text-decoration: underline;
+                text-align: center;
+            }
+        }
+        #div-p-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            p {
+                text-align: center;
+                color: white;
+                width: 100%;
+                font-size: 20px;
+                order: 1;
+            }
+            a {
+                order: 2;
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
