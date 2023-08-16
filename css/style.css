@@ -546,8 +546,10 @@ main {
         justify-content: center;
         align-items: center; }
         main #sect-2 div article img {
+          margin-top: 5px;
           width: 50%; }
         main #sect-2 div article img:hover {
+          transition: all 0.5s;
           width: 60%;
         }
         main #sect-2 div article h3 {
@@ -587,7 +589,11 @@ main {
         justify-content: center;
         align-items: center; }
         main #sect-3 div article img {
-          width: 50%; }
+          margin-top: 5px;
+          width: 35%; }
+        main #sect-3 div article img:hover {
+          transition: all 0.5s;
+          width: 40%; }
         main #sect-3 div article h3 {
           color: #9ca3a7;
           font-size: 25px;
@@ -628,6 +634,10 @@ main {
         justify-content: center;
         align-items: center; }
         main #sect-4 div article img {
+          margin-top: 5px;
+          width: 50%; }
+        main #sect-4 div article img:hover {
+          transition: all 0.5s;
           width: 60%; }
         main #sect-4 div article h3 {
           color: #9ca3a7;
