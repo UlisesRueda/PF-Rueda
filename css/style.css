@@ -275,9 +275,11 @@ main {
       background-image: url(../assets/img/textura-roja-tela.jpg);
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
+      justify-content: center;
+      align-items: center ; }
       main #sect-3 div article img {
+        margin-left: 100px;
+        margin-right: 100px;
         width: 35%;
         height: 60%; }
         main #sect-3 div article img:hover {
